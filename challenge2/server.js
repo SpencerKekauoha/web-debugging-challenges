@@ -4,12 +4,12 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 var mongoose = require('mongoose');
 
+// Express
+var app = express();
+
 // Controllers
 var SightingCtrl = require('./controllers/SightingCtrl');
 var UserCtrl = require('./controllers/UserCtrl');
-
-// Express
-var app = express();
 
 // Middleware
 app.use(bodyParser.json());
@@ -17,7 +17,7 @@ app.use(cors());
 
 // Endpoints
 app.post('/sighting', SightingCtrl.create);
-app.get('/sighting', SightingCtrl.raed);
+app.get('/sighting', SightingCtrl.read);
 app.put('/sighting/:id', SightingCtrl.update);
 app.delete('/sighting/:id', SightingCtrl.delete);
 

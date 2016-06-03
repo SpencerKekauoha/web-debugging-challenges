@@ -1,0 +1,5 @@
+1.  error: can't find cors
+    Fix: npm install to install all packages
+
+2.  error: route.get() Error
+    fix: endpoint app.get SightingCtrl.read not raed
