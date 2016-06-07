@@ -1,0 +1,28 @@
+1.  miniRouting does not exist: made sure all modules had miniRouting spelled correctly and imported a correct cdn for angular into a script file on index.html.
+
+
+
+app.js file
+
+a. in app.js: router in had a typo.  Correct fix is ui.router.
+
+1. $statProvider had improper syntax.  Parentheses were not formatted correctly.
+
+2. injected urlRouterProvider and set .otherwise to url "/"
+
+3. error: View did not switch between shoes and socks.
+  Fix: in app.js include :id at the end of the url.  url: '/products:id'
+
+
+productCtrl.js
+
+1. error: missing token.
+  Fix: on line 9: added a curly bracket before the parenthesis.
+
+2. error: injector
+  Fix: inject mainService to get the product data
+
+  setttingsCtrl.js
+
+  1.error: ng:areaq
+  2. fix: removed controller in app.js from the settings state.
